@@ -1,69 +1,273 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>见地 - 支持</title>
+    <meta name="description" content="见地应用支持页面 - 知识管理和观点记录应用">
+    <title>见地 - 应用支持</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-        }
-        h1 {
-            color: #07C160;
-        }
-        .contact {
-            background: #f5f5f5;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
             padding: 20px;
-            border-radius: 8px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #07C160 0%, #06A050 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #07C160;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .section h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #07C160;
             margin: 20px 0;
         }
-        a {
+        
+        .contact-box h2 {
+            color: #07C160;
+            margin-bottom: 15px;
+            border: none;
+            padding: 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+        
+        .contact-item strong {
+            min-width: 80px;
+            color: #555;
+        }
+        
+        .contact-item a {
             color: #07C160;
             text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
         }
-        a:hover {
+        
+        .contact-item a:hover {
+            color: #06A050;
             text-decoration: underline;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        ul li {
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+        
+        .app-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .app-info p {
+            margin: 8px 0;
+        }
+        
+        .app-info strong {
+            color: #07C160;
+        }
+        
+        .footer {
+            background: #f5f5f5;
+            padding: 20px 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #07C160;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .contact-box {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>见地 - 应用支持</h1>
-    
-    <p>感谢您使用见地！如果您遇到任何问题或有任何建议，请通过以下方式联系我们。</p>
-    
-    <div class="contact">
-        <h2>📧 联系方式</h2>
-        <p><strong>邮箱</strong>：<a href="mailto:support@example.com">noreply@manmanyouyou.cn</a></p>
-        <p>我们会在 24-48 小时内回复您的邮件。</p>
+    <div class="container">
+        <div class="header">
+            <h1>见地</h1>
+            <p>知识管理，观点沉淀</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>欢迎使用见地</h2>
+                <p>感谢您使用见地！见地是一款专注于知识管理和观点沉淀的移动应用，帮助您系统化地收集、整理、思考和管理来自不同来源的智慧观点。</p>
+                <p>如果您在使用过程中遇到任何问题，或有任何建议和反馈，我们非常乐意听到您的声音。</p>
+            </div>
+            
+            <div class="section">
+                <div class="contact-box">
+                    <h2>📧 联系我们</h2>
+                    <div class="contact-item">
+                        <strong>邮箱：</strong>
+                        <a href="mailto:support@jianzhi.app">support@manmanyouyou.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>响应时间：</strong>
+                        <span>我们会在 24-48 小时内回复您的邮件</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>❓ 常见问题</h2>
+                
+                <h3>1. 如何开始使用见地？</h3>
+                <p>见地是一款知识管理和观点记录应用。您可以：</p>
+                <ul>
+                    <li><strong>记录观点</strong>：随时记录个人观点和思考，支持标签、作者、出处等多维度标注</li>
+                    <li><strong>浏览精选</strong>：浏览精选的智慧观点和名言，一键收藏到个人观点库</li>
+                    <li><strong>智能管理</strong>：使用标签系统、作者筛选、关键词搜索等功能管理您的知识库</li>
+                </ul>
+                
+                <h3>2. 我的数据存储在哪里？</h3>
+                <p>您的数据主要存储在本地设备上，确保隐私安全。部分数据会同步到云端，方便您在多设备间使用。我们遵循最小化数据收集原则，仅收集提供核心功能所必需的数据。</p>
+                
+                <h3>3. 如何备份我的数据？</h3>
+                <p>应用会自动同步数据到云端。您也可以定期导出数据作为备份。所有数据都存储在您的账户下，您可以随时查看、修改或删除。</p>
+                
+                <h3>4. 如何搜索和筛选观点？</h3>
+                <p>您可以通过以下方式查找观点：</p>
+                <ul>
+                    <li>使用搜索栏搜索观点、作者或标签</li>
+                    <li>点击标签快速筛选相关观点</li>
+                    <li>通过作者筛选查看特定作者的观点</li>
+                </ul>
+                
+                <h3>5. 应用支持哪些设备？</h3>
+                <p>见地支持 iPhone 和 iPad，可以在 iOS 和 iPadOS 设备上使用。应用针对不同屏幕尺寸进行了优化，提供最佳的使用体验。</p>
+                
+                <h3>6. 应用是免费的吗？</h3>
+                <p>是的，见地目前完全免费使用，所有核心功能都可以免费使用。</p>
+            </div>
+            
+            <div class="section">
+                <h2>📱 应用信息</h2>
+                <div class="app-info">
+                    <p><strong>应用名称：</strong>见地</p>
+                    <p><strong>当前版本：</strong>1.0</p>
+                    <p><strong>支持平台：</strong>iOS / iPadOS</p>
+                    <p><strong>最低系统要求：</strong>iOS 14.0 或更高版本</p>
+                    <p><strong>分类：</strong>效率 / 教育</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>💡 使用技巧</h2>
+                <ul>
+                    <li><strong>标签管理</strong>：为观点添加多个标签，方便后续分类和查找</li>
+                    <li><strong>作者标注</strong>：记录观点的作者和出处，建立知识网络</li>
+                    <li><strong>定期回顾</strong>：定期浏览您的观点库，加深理解和记忆</li>
+                    <li><strong>收藏精选</strong>：从精选观点中收藏有价值的内容到个人库</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>🔒 隐私与安全</h2>
+                <p>我们非常重视您的隐私和数据安全：</p>
+                <ul>
+                    <li>所有数据默认存储在用户设备本地</li>
+                    <li>云端同步采用加密传输和存储</li>
+                    <li>我们不会将您的数据用于广告或其他商业目的</li>
+                    <li>您可以随时查看、修改或删除您的数据</li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <a href="/privacy-policy">查看完整的隐私政策</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 见地. 保留所有权利.</p>
+            <p style="margin-top: 5px; font-size: 0.85em;">让每一次思考都值得被保存</p>
+        </div>
     </div>
-    
-    <h2>❓ 常见问题</h2>
-    
-    <h3>如何开始使用？</h3>
-    <p>见地是一款知识管理和观点记录应用。您可以：</p>
-    <ul>
-        <li>记录个人观点和思考</li>
-        <li>浏览和收藏精选观点</li>
-        <li>使用标签和搜索功能管理内容</li>
-    </ul>
-    
-    <h3>数据存储在哪里？</h3>
-    <p>您的数据主要存储在本地设备上，确保隐私安全。部分数据会同步到云端，方便在多设备间使用。</p>
-    
-    <h3>如何备份数据？</h3>
-    <p>应用会自动同步数据到云端。您也可以定期导出数据作为备份。</p>
-    
-    <h2>📱 应用信息</h2>
-    <p><strong>版本</strong>：1.0</p>
-    <p><strong>平台</strong>：iOS / iPadOS</p>
-    
-    <hr>
-    <p style="color: #666; font-size: 0.9em;">© 2025 见地. 保留所有权利.</p>
 </body>
 </html>
